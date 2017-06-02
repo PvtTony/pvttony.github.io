@@ -6,7 +6,7 @@
 - Github：https://github.com/PvtTony
 - 手机：17858963466
 - 电子邮件：yu@songt.me
-- 期望职位：Java开发实习生 / Java后端开发实习生
+- 期望职位：Java 开发实习生 / Java 后端开发实习生
 - 期望城市：杭州
 
 
@@ -23,21 +23,21 @@
 - 智慧组卷系统
   - 负责项目的后端开发，实现了用户登录、学生获取和提交练习、查看成绩报告、错题集和题目收藏夹增删改查以及使用Apriori算法挖掘错题记录功能。
   - 该项目为浙江省电子商务竞赛技术组参赛作品，荣获技术组二等奖。
-  - 涉及到的主要技术：Spring MVC /  Spring Boot / Maven / MySQL /  Maven / 数据挖掘。
+  - 涉及到的主要技术：Spring MVC / Spring Boot / Maven / MySQL / Maven / 数据挖掘。
   - 项目仓库地址：https://github.com/PvtTony/SmartPaperGenSys
 - 小型外勤管理系统
   - 涉及到的主要技术 Spring MVC / Spring Data JPA 
   - 负责项目的后端开发，实现了签到功能，人员分组功能，出差登记功能和任务管理（增删改查）功能。
-  - 该项目为一个小型练手项目，从中学习了Spring框架的使用，以及团队开发的基本方法，提升了自己的开发能力
-  - 对 MVC 设计模式的理解更加深刻以及ORM在项目中的必要性
+  - 该项目为一个小型练手项目，从中学习了 Spring 框架的使用，以及团队开发的基本方法，提升了自己的开发能力
+  - 对 MVC 设计模式的理解更加深刻以及 ORM 在项目中的必要性
 
 ## 专业技能
 
-- 熟悉 Java / Spring Framework (Spring MVC, Spring Data JPA, Spring Security, Spring Boot等) ／MyBatis / Maven / Gradle / git
+- 熟悉 Java / Spring Framework ( Spring MVC, Spring Data JPA, Spring Security, Spring Boot 等 ) ／MyBatis / Maven / Gradle / git
 - 了解 Python，能使用 Python 完成一些批处理脚本
 - 熟悉 Linux 系统的使用，日常在 macOS 下进行开发
 - 对网络安全有一定兴趣，在开发过程中会注意软件的安全性
-- 大一一年一次性通过CET-4和CET-6，能比较顺畅的阅读英文文档
+- 大一一年一次性通过 CET-4 和 CET-6 ，能比较顺畅的阅读英文文档
 - 熟悉数据结构和算法
 
 ## 个人荣誉
