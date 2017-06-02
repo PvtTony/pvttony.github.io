@@ -4,6 +4,8 @@
 - 本科学历／浙江师范大学软件工程系
 - 大三学生
 - Github：https://github.com/PvtTony
+- 手机：17858963466
+- 电子邮件：yu@songt.me
 - 期望职位：Java开发实习生 / Java后端开发实习生
 - 期望城市：杭州
 
