@@ -15,7 +15,7 @@
 - 浙江师范大学校内采购系统
   - 该应用被用于管理校采购部门处理各种采购事务以及发布信息。
   - 负责整个项目的技术选型，后端搭建，主要功能的开发和部署，实现了对各种采购项目的增删改查、审核和发布，和采购信息的多层级分类查询等。
-  - 涉及到的主要技术：Spring MVC / Spring Security / Spring Boot / Maven / SQL Server / 持续集成 / Maven。
+  - 涉及到的主要技术：Spring MVC / Spring Security / Spring Boot / Maven / SQL Server / 持续集成 。
   - 使用 RESTful API 与前端交互。
   - 目前项目已经投入使用，客户反馈良好。
   - 项目仓库地址：
@@ -23,7 +23,7 @@
 - 智慧组卷系统
   - 负责项目的后端开发，实现了用户登录、学生获取和提交练习、查看成绩报告、错题集和题目收藏夹增删改查以及使用Apriori算法挖掘错题记录功能。
   - 该项目为浙江省电子商务竞赛技术组参赛作品，荣获技术组二等奖。
-  - 涉及到的主要技术：Spring MVC / Spring Boot / Maven / MySQL / Maven / 数据挖掘。
+  - 涉及到的主要技术：Spring MVC / Spring Boot / MySQL / Maven / 数据挖掘。
   - 项目仓库地址：https://github.com/PvtTony/SmartPaperGenSys
 - 小型外勤管理系统
   - 涉及到的主要技术 Spring MVC / Spring Data JPA 
