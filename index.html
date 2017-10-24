@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>Resume.md</title><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'><style type='text/css'>html, body {overflow-x: initial !important;}html { font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+<title>Resume.md</title><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:  #ffffff; --text-color:  #333333; --code-block-bg-color: inherit; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { background-color: rgb(181, 214, 252); text-shadow: none; background-position: initial initial; background-repeat: initial initial; }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: auto; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 @media screen and (max-width: 500px) { 
@@ -30,10 +31,12 @@ h4 { font-size: 1.4rem; }
 h5 { font-size: 1.2rem; }
 h6 { font-size: 1rem; }
 p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.typora-export p { white-space: normal; }
 .mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
 a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
@@ -47,7 +50,7 @@ table.md-table td { min-width: 80px; }
 div.hr:focus { cursor: none; }
 pre { white-space: pre-wrap; }
 .CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: var(--code-block-bg-color); position: relative !important; }
 .md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 .md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
 .md-fences.mock-cm { white-space: pre-wrap; }
@@ -64,12 +67,12 @@ blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
 @media print { 
-  html, body { height: 100%; }
+  html, body { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   h1, h2, h3, h4, h5, h6 { break-after: avoid-page; orphans: 2; }
   p { orphans: 4; }
   html.blink-to-pdf { font-size: 13px; }
-  .typora-export #write { padding-left: 1cm; padding-right: 1cm; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid-page; }
   .typora-export #write::after { height: 0px; }
   @page { margin: 20mm 0mm; }
 }
@@ -89,7 +92,8 @@ p + .mathjax-block { margin-top: -1.143rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
 .md-toc::after, .md-toc-content::after { display: none; }
-.md-toc-item { display: block; color: rgb(65, 131, 196); text-decoration: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
 .md-toc-inner:hover { }
 .md-toc-inner { display: inline-block; cursor: pointer; }
 .md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
@@ -120,16 +124,16 @@ a.md-print-anchor { border: none !important; display: inline-block !important; p
 .MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
 .MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
 .MathJax_SVG * { transition: none; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
 
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
 
 @include-when-export url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
-
-/**
- * css forked from https://github.com/GitbookIO/gitbook 
- * www.gitbook.com
- * Apache License
- * https://github.com/GitbookIO/gitbook/blob/master/LICENSE
- **/
 
 @font-face {
     font-family: 'Open Sans';
@@ -350,7 +354,6 @@ table {
 }
 table tr {
     border-top: 1px solid #cccccc;
-    background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -486,6 +489,10 @@ tt {
     padding-bottom:20px;
 }
 
+.sidebar-tabs {
+    border-bottom: none;
+}
+
 #typora-quick-open {
     border: 1px solid #ddd;
     background-color: #f8f8f8;
@@ -511,11 +518,26 @@ header, .context-menu, .megamenu-content, footer{
     font-family: "Segoe UI", "Arial", sans-serif;
 }
 
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+
 
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-mac'><h2><a name='header-c5' class='md-header-anchor '></a>个人信息</h2><ul><li>郁松涛／男／21岁</li><li>本科学历／浙江师范大学软件工程系</li><li>大三学生</li><li>Github：<a href='https://github.com/PvtTony' target='_blank' >https://github.com/PvtTony</a></li><li>手机：17858963466</li><li>电子邮件：<a href='mailto:yu@songt.me' target='_blank' >yu@songt.me</a></li><li>期望职位：Java 开发实习生 / Java 后端开发实习生</li><li>期望城市：杭州</li></ul><h2><a name='header-c32' class='md-header-anchor '></a>项目经历</h2><ul><li><p>浙江师范大学校内采购系统</p><ul><li>该应用被用于管理校采购部门处理各种采购事务以及发布信息。</li><li>负责整个项目的技术选型，后端搭建，主要功能的开发和部署，实现了对各种采购项目的增删改查、审核和发布，和采购信息的多层级分类查询等。</li><li>涉及到的主要技术：Spring MVC / Spring Security / Spring Boot / Maven / SQL Server / 持续集成 。</li><li>使用 RESTful API 与前端交互。</li><li>目前项目已经投入使用，客户反馈良好。</li><li>项目仓库地址：
-<a href='http://git.oschina.net/PvtTony/PurchaseSystem'>http://git.oschina.net/PvtTony/PurchaseSystem</a></li></ul></li><li><p>智慧组卷系统</p><ul><li>负责项目的后端开发，实现了用户登录、学生获取和提交练习、查看成绩报告、错题集和题目收藏夹增删改查以及使用Apriori算法挖掘错题记录功能。</li><li>该项目为浙江省电子商务竞赛技术组参赛作品，荣获技术组二等奖。</li><li>涉及到的主要技术：Spring MVC / Spring Boot / MySQL / Maven / 数据挖掘。</li><li>项目仓库地址：<a href='https://github.com/PvtTony/SmartPaperGenSys' target='_blank' >https://github.com/PvtTony/SmartPaperGenSys</a></li></ul></li><li><p>小型外勤管理系统</p><ul><li>涉及到的主要技术 Spring MVC / Spring Data JPA </li><li>负责项目的后端开发，实现了签到功能，人员分组功能，出差登记功能和任务管理（增删改查）功能。</li><li>该项目为一个小型练手项目，从中学习了 Spring 框架的使用，以及团队开发的基本方法，提升了自己的开发能力</li><li>对 MVC 设计模式的理解更加深刻以及 ORM 在项目中的必要性</li></ul></li></ul><h2><a name='header-c89' class='md-header-anchor '></a>专业技能</h2><ul><li>熟悉 Java / Spring Framework ( Spring MVC, Spring Data JPA, Spring Security, Spring Boot 等 ) ／MyBatis / Maven / Gradle / git</li><li>了解 Python，能使用 Python 完成一些批处理脚本</li><li>熟悉 Linux 系统的使用，日常在 macOS 下进行开发</li><li>对网络安全有一定兴趣，在开发过程中会注意软件的安全性</li><li>大一一年一次性通过 CET-4 和 CET-6 ，能比较顺畅的阅读英文文档</li><li>熟悉数据结构和算法</li></ul><h2><a name='header-c109' class='md-header-anchor '></a>个人荣誉</h2><ul><li>2017年 浙江省电子商务竞赛 技术组二等奖</li><li>2016年 浙江省电子商务竞赛 技术组三等奖</li><li>2016年 金华市“楼兰杯”第二届网络安全竞赛特等奖</li><li>2015年 校网络安全竞赛二等奖</li><li>2014年 校新生编程大赛二等奖</li></ul><h2><a name='header-c126' class='md-header-anchor '></a>致谢</h2><p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p></div>
+<div  id='write'  class = 'is-mac'><h2><a name='header-n0' class='md-header-anchor '></a>个人信息</h2><ul><li>郁松涛／男／21岁</li><li>本科学历／浙江师范大学软件工程系</li><li>Github：<a href='https://github.com/PvtTony' target='_blank' >https://github.com/PvtTony</a></li><li>手机：17858963466</li><li>电子邮件：<a href='mailto:yu@songt.me' target='_blank' >yu@songt.me</a></li><li>期望职位：Java 开发 / Java 后端开发</li><li>期望城市：杭州</li></ul><h2><a name='header-n27' class='md-header-anchor '></a>实习经历</h2><ul><li><p>2017.06.30～至今 浙江新华移动传媒股份有限公司</p><ul><li><p>新华社手机客户端 API (2017.07 ~ 2017.08)</p><ul><li>修正了数个根据测试反馈的bug</li><li>独立完成了从新媒体中心获取新闻数据并自动入库的功能，运行效率较高（使用多线程处理新闻）</li></ul></li><li><p>新华社英文版 (2017.08 ~ 2017.10)</p><ul><li>负责用户登陆、收藏管理、站内消息、意见反馈和智能推荐接口的实现</li><li>通过阿里云MNS系统向项目合作方发送用户个性化爱好和新闻数据，并从合作方获取用户兴趣的推荐数据反馈给客户端</li></ul></li></ul></li></ul><h2><a name='header-n32' class='md-header-anchor '></a>项目经历</h2><ul><li><p>浙江师范大学校内采购系统  (2016.12 ~ 2017.03)</p><ul><li>该应用被用于管理校采购部门处理各种采购事务以及发布信息。</li><li>负责整个项目的后端搭建，主要功能的开发和部署，实现了对各种采购项目的增删改查、审核和发布，和采购信息的多层级分类查询等。</li><li>涉及到的主要技术：Spring MVC / Spring Security / Spring Boot / Maven / SQL Server / 持续集成 。</li><li>使用 RESTful API 与前端交互。</li><li>目前项目已经投入使用，客户反馈良好。</li><li>项目仓库地址：
+<a href='http://git.oschina.net/PvtTony/PurchaseSystem'>http://git.oschina.net/PvtTony/PurchaseSystem</a></li></ul></li><li><p>智慧组卷系统 (2017.03 ~ 2017.05)</p><ul><li>负责项目的后端开发，实现了用户登录、学生获取和提交练习、查看成绩报告、错题集和题目收藏夹增删改查以及使用 Apriori 算法挖掘错题记录功能。</li><li>该项目为浙江省电子商务竞赛技术组参赛作品，荣获技术组二等奖。</li><li>涉及到的主要技术：Spring MVC / Spring Boot / MySQL / Maven / 数据挖掘。</li><li>项目仓库地址：<a href='https://github.com/PvtTony/SmartPaperGenSys' target='_blank' >https://github.com/PvtTony/SmartPaperGenSys</a></li></ul></li><li><p>小型外勤管理系统 (2016.09 ~ 2016.10)</p><ul><li>涉及到的主要技术 Spring MVC / Spring Data JPA </li><li>负责项目的后端开发，实现了签到功能，人员分组功能，出差登记功能和任务管理（增删改查）功能。</li><li>该项目为一个小型练手项目，从中学习了 Spring 框架的使用，以及团队开发的基本方法，提升了自己的开发能力</li><li>对 MVC 设计模式的理解更加深刻以及 ORM 在项目中的必要性</li></ul></li></ul><h2><a name='header-n86' class='md-header-anchor '></a>专业技能</h2><ul><li>熟悉 Java / Spring ( Spring MVC, Spring Data JPA, Spring Security, Spring Boot 等 ) ／MyBatis / Maven / Gradle / git / Message Queue / dubbo</li><li>了解 Python，能使用 Python 完成一些批处理脚本</li><li>熟悉 Linux 系统的使用，日常在 macOS 下进行开发测试</li><li>对网络安全有一定兴趣，在开发过程中会注意软件的安全性</li><li>大一一年一次性通过 CET-4 和 CET-6 ，能比较顺畅的阅读英文文档</li><li>了解操作系统和计算机网络，熟悉常用数据结构、算法和设计模式，对程序性能比较敏感</li></ul><h2><a name='header-n106' class='md-header-anchor '></a>个人荣誉</h2><ul><li>2017年 浙江省电子商务竞赛 技术组二等奖</li><li>2016年 浙江省电子商务竞赛 技术组三等奖</li><li>2016年 金华市“楼兰杯”第二届网络安全竞赛特等奖</li><li>2015年 校网络安全竞赛二等奖</li><li>2014年 校新生编程大赛二等奖</li></ul><h2><a name='header-n123' class='md-header-anchor '></a>致谢</h2><p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p></div>
 </body>
 </html>
